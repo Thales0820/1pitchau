@@ -1,12 +1,11 @@
-import { useState } from 'react'
-import { Home } from './pages/Home'
 import { Rotas } from './routes'
-
+import { GlobalStyle } from './styles/global'
 
 function App() {
 
   return (
     <>
+      <GlobalStyle />
       <Rotas />
     </>
   )
