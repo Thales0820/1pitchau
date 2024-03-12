@@ -1,0 +1,43 @@
+{
+  "categorias": [
+    {
+      "id": 1,
+      "categoria": "Pen Drive"
+    },
+    {
+      "id": 2,
+      "categoria": "Mouse"
+    },
+    {
+      "id": 3,
+      "categoria": "Fone"
+    },
+    {
+      "id": 4,
+      "categoria": "Teclado"
+    }
+  ],
+  "produtos": [
+    {
+      "id": 1,
+      "produto": "PenDrive Samsung",
+      "preco": "80,00",
+      "promocao": "10,99",
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_668267-MLB69400096321_052023-O.webp"
+    },
+    {
+      "id": 2,
+      "produto": "Tecldo Razer",
+      "preco": "270,00",
+      "promocao": "199,99",
+      "imagem": "https://assets2.razerzone.com/images/pnx.assets/1a0339cc1621d3b23d7e79658bea2c4a/razer-huntsman-v3-pro-line_500x500-v2.webp"
+    },
+    {
+      "id": 3,
+      "produto": "Fone Redragon",
+      "preco": "215,50",
+      "promocao": "108,00",
+      "imagem": "https://cdn.awsli.com.br/300x300/1318/1318167/produto/139816261/7efb16e797.jpg"
+    }
+  ]
+}

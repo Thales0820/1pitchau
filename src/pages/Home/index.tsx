@@ -1,10 +1,11 @@
+import { Card } from "../../components/Card"
 import { Menu } from "../../components/Menu"
 
 export const Home = () => {
   return (
     <>
       <Menu />
-      <h1>Home</h1>
+      <Card />
     </>
   )
 }
