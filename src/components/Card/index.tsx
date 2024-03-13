@@ -1,14 +1,18 @@
 import axios from "axios";
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
+import { SlMagnifier } from "react-icons/sl";
 import { Title } from "../../pages/Home/styles";
 import { CardBory, TitlePreco, TextPromo, Button, TextButton } from "./styles";
 
 interface IDataProdutos {
   id: number,
-  produto: string,
-  preco: string,
-  promocao: string,
-  imagem: string
+  nome: string,
+  valor: string,
+  promo: string,
+  imagemp: string,
+  imagemg: string,
+  id_categoria: number,
+  promoNumber: string,
 }
 
 export const Card= () => {
@@ -37,19 +41,25 @@ export const Card= () => {
           }}>Produtos em Destaque:</h2>
           <div style={{
             display: 'flex',
-            justifyContent: 'center'
+            justifyContent: 'center',
+            flexWrap: 'wrap'
           }}>
               {
                 dataProdutos.map((produto) => {
                   return (
                     <CardBory
                       key={produto.id}>
-                      <img src={produto.imagem}/>
-                      <Title>{produto.produto}</Title>
-                      <TitlePreco>{produto.preco}</TitlePreco>
-                      <TextPromo>{produto.promocao}</TextPromo>
+                      <img style={{
+                        width: '100%'
+                      }} src={'https://raw.githubusercontent.com/profchines/imagens1Pitchau/main/Imagens1Pitchau/' + produto.imagemp} />
+                      <Title>{produto.nome}</Title>
+                      <br />
+                      <TitlePreco>{produto.valor}</TitlePreco>
+                      <TextPromo>{produto.promo}</TextPromo>
                       <Button>
-                        <TextButton>Detalhes</TextButton>
+                        <TextButton>
+                          <SlMagnifier size={15}></SlMagnifier> Detalhes
+                        </TextButton>
                       </Button>
                     </CardBory>
                   )

@@ -7,16 +7,23 @@ export const CardBory = styled.div`
   text-align: center;
   padding: 10px;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-between;
 `
 
+// export const Title = styled.h2`
+//   text-transform: lowercase;
+// `
+
 export const TitlePreco = styled.p`
   text-decoration: line-through;
+  margin-bottom: 10px;
 `
 
 export const TextPromo = styled.strong`
   color: var(--red);
+  margin-bottom: 10px;
 `
 
 export const Button = styled.button`
