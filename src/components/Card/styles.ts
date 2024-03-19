@@ -12,10 +12,6 @@ export const CardBory = styled.div`
   justify-content: space-between;
 `
 
-// export const Title = styled.h2`
-//   text-transform: lowercase;
-// `
-
 export const TitlePreco = styled.p`
   text-decoration: line-through;
   margin-bottom: 10px;

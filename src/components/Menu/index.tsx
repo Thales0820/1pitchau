@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import { FaShoppingCart } from 'react-icons/fa'
 import { LeftContainer, NavbarContainer, NavbarExtendedContainer, NavbarInnerContainer, NavbarLink, NavbarLinkContainer, NavbarLinkExtended, OpenLinksButton, RightContainer } from "./styles";
 import axios from "axios";
+import { AiFillHome } from "react-icons/ai";
 
 interface IDataMenu {
   id: number;
@@ -45,7 +46,7 @@ export const Menu = () => {
               >
                 1Pitchau
               </NavbarLinkExtended>
-              <NavbarLink to={'/'}>Home</NavbarLink>
+              <NavbarLink to={'/'}><AiFillHome /> Home</NavbarLink>
               {
                 dataMenu.map((menu) => {
                   return(

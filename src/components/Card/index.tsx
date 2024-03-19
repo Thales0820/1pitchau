@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { SlMagnifier } from "react-icons/sl";
 import { Title } from "../../pages/Home/styles";
 import { CardBory, TitlePreco, TextPromo, Button, TextButton } from "./styles";
+import { Link } from "react-router-dom";
 
 interface IDataProdutos {
   id: number,
@@ -50,17 +51,20 @@ export const Card= () => {
                     <CardBory
                       key={produto.id}>
                       <img style={{
-                        width: '100%'
+                        width: '100%',
+                        height: '300px'
                       }} src={'https://raw.githubusercontent.com/profchines/imagens1Pitchau/main/Imagens1Pitchau/' + produto.imagemp} />
                       <Title>{produto.nome}</Title>
                       <br />
                       <TitlePreco>{produto.valor}</TitlePreco>
                       <TextPromo>{produto.promo}</TextPromo>
-                      <Button>
-                        <TextButton>
-                          <SlMagnifier size={15}></SlMagnifier> Detalhes
-                        </TextButton>
-                      </Button>
+                      <Link to={'/Produto/' + produto.id}>
+                        <Button>
+                          <TextButton>
+                            <SlMagnifier size={15}></SlMagnifier> Detalhes
+                          </TextButton>
+                        </Button>
+                      </Link>
                     </CardBory>
                   )
                 })
