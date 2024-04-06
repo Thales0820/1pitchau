@@ -27,7 +27,7 @@ export const Button = styled.button`
   padding: 15px;
   border-radius: 8px;
   background-color: var(--red);
-  :hover {
+  &:hover {
     filter: brightness(1.3);
   }
   margin-top: 10px;
@@ -35,4 +35,7 @@ export const Button = styled.button`
 
 export const TextButton = styled.h3`
   color: var(--white);
+  &:hover {
+    color: var(--black);
+  }
 `

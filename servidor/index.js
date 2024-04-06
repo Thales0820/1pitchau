@@ -16,3 +16,5 @@ server.use(router)
 server.listen(3000, ()=> {
   console.log('JSON Server Iniciou com Sucesso!')
 })
+
+// comando para rodar o servece= npx json-server db.json

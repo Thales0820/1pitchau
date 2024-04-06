@@ -1,19 +1,19 @@
 {
   "categorias": [
     {
-      "id": 1,
+      "id": "1",
       "categoria": "Pen Drive"
     },
     {
-      "id": 2,
+      "id": "2",
       "categoria": "Mouse"
     },
     {
-      "id": 3,
+      "id": "3",
       "categoria": "Fone"
     },
     {
-      "id": 4,
+      "id": "4",
       "categoria": "Teclado"
     }
   ],
@@ -137,6 +137,90 @@
       "promoNumber": "109,90",
       "imagemg": "pendrives/pendrive3g.jpg",
       "imagemp": "pendrives/pendrive3p.jpg"
+    }
+  ],
+  "contatos": [
+    {
+      "id": "1",
+      "nome": "Thales",
+      "telefone": "44997266389",
+      "email": "thales@gmail.com",
+      "cidade": "Iporã",
+      "motivo": "Erro no Header"
+    },
+    {
+      "id": "2",
+      "nome": "Matheus",
+      "telefone": "44997783839",
+      "email": "matheus@gmail.com",
+      "cidade": "Esperança Nova",
+      "motivo": "Problema no carrinho"
+    },
+    {
+      "id": "3",
+      "nome": "Eduardo",
+      "telefone": "44991168089",
+      "email": "eduardo@gmail.com",
+      "cidade": "Altônia",
+      "motivo": "Placas de vídeo então em falta?"
+    },
+    {
+      "id": "4",
+      "nome": "Monica",
+      "telefone": "44999685231",
+      "email": "monica@gmail.com",
+      "cidade": "Umuarama",
+      "motivo": "Botão feio"
+    },
+    {
+      "id": "5",
+      "nome": "Felipe",
+      "telefone": "44998654122",
+      "email": "felipe@gmail.com",
+      "cidade": "Umuarama",
+      "motivo": "Falta um modo escuro"
+    },
+    {
+      "id": "6",
+      "nome": "Alan",
+      "telefone": "44999568799",
+      "email": "alan@gmail.com",
+      "cidade": "Umuarama",
+      "motivo": "Preciso de um mouse pad"
+    }
+  ],
+  "cidades": [
+    {
+      "id": "1",
+      "nome": "Altônia"
+    },
+    {
+      "id": "2",
+      "nome": "Curitiba"
+    },
+    {
+      "id": "3",
+      "nome": "Douradina"
+    },
+    {
+      "id": "4",
+      "nome": "Esperança Nova"
+    },
+    {
+      "id": "5",
+      "nome": "Guaíra"
+    },
+    {
+      "id": "6",
+      "nome": "Iporã"
+    },
+    {
+      "id": "7",
+      "nome": "Perobal"
+    },
+    {
+      "id": "8",
+      "nome": "Umuarama"
     }
   ]
 }

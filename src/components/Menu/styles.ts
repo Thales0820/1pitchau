@@ -50,7 +50,7 @@ export const NavbarLink = styled(Link)`
   text-decoration: none;
   margin: 10px;
 
-  :hover {
+  &:hover {
     color: var(--white);
   }
 
@@ -65,7 +65,7 @@ export const NavbarLinkExtended = styled(Link)`
   text-decoration: none;
   margin: 10px;
 
-  :hover {
+  &:hover {
     color: var(--white);
   }
 `;
@@ -79,7 +79,7 @@ export const OpenLinksButton = styled.button`
   font-size: 45px;
   cursor: pointer;
 
-  :hover {
+  &:hover {
     color: var(--white);
   }
 

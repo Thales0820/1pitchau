@@ -56,9 +56,9 @@ export const Card= () => {
                       }} src={'https://raw.githubusercontent.com/profchines/imagens1Pitchau/main/Imagens1Pitchau/' + produto.imagemp} />
                       <Title>{produto.nome}</Title>
                       <br />
-                      <TitlePreco>{produto.valor}</TitlePreco>
-                      <TextPromo>{produto.promo}</TextPromo>
-                      <Link to={'/Produto/' + produto.id}>
+                      <TitlePreco>R${produto.valor}</TitlePreco>
+                      <TextPromo>R${produto.promo}</TextPromo>
+                      <Link to={'http://localhost:3001/produto/' + produto.id}>
                         <Button>
                           <TextButton>
                             <SlMagnifier size={15}></SlMagnifier> Detalhes
