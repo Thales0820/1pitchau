@@ -17,8 +17,6 @@ export const THtr = styled.tr`
     padding-left: 6px;
     text-align: center;
     border: 1px solid #ddd;
-    /* background-color: #04AA6D; */
-    /* color: white; */
 `;
 export const THTh = styled.th`
     padding: 6px;
@@ -30,12 +28,16 @@ export const Td = styled.td`
     padding: 6px;
     text-align: center;
     border: 1px solid #ddd;
+
+    img {
+      height: 150px;
+      width: 150px;
+    }
 `;
 export const TBTr = styled.tr`
     padding: 6px;
     text-align: center;
     border: 1px solid #ddd;
-
     :hover {
         background-color: #ddd;
     }
@@ -46,9 +48,6 @@ export const Button = styled.button<ButtonProps>`
     padding: 15px;
     border-radius: 8px;
     background-color: ${(props: any) => props.bgColor || `var(--red)`};
-    :hover {
-        filter: brightness(1.3);
-    }
     margin-top: 10px;
 `;
 export const TextButton = styled.h3`

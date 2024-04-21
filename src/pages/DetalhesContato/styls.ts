@@ -4,6 +4,9 @@ export const Detalhe = styled.div`
   width: 800px;
   margin-left: auto;
   margin-right: auto;
+  @media (max-width: 700px) {
+    width: 90%;
+  }
 `
 
 export const CardHeader = styled.div`

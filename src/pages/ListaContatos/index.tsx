@@ -3,6 +3,7 @@ import { Menu } from "../../components/Menu"
 import { Detalhes, Informacoes, Tabela, Topico, Topicos } from "./styls"
 import { useEffect, useState } from "react"
 import axios from "axios"
+import { SlMagnifier } from "react-icons/sl"
 
 interface IDataContatos {
   id: number,
@@ -56,10 +57,10 @@ export const ListaContatos = () => {
             <td>{contato.email}</td>
             <td>{contato.cidade}</td>
             <Detalhes>
-            <Link to={'http://localhost:3001/DetalhesContato/' + contato.id}
-                  style={{textDecoration: 'none'}}>
-              <button>Detalhes</button>
-            </Link>
+              <Link to={'http://localhost:3001/DetalhesContato/' + contato.id}
+                    style={{textDecoration: 'none'}}>
+                <button><SlMagnifier size={15} /> Detalhes</button>
+              </Link>
             </Detalhes>
           </tr>
         </Informacoes>

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const CardD = styled.div`
-  margin: 18px;
+  margin: 20px;
   border: 2px solid var(--black);
   text-align: center;
   display: flex;
@@ -25,12 +25,15 @@ export const Input = styled.input`
   font-size: 18px;
   padding: 10px;
   margin-top: 10px;
-  margin-bottom: 10px;
-
+  width: 200px;
   border: 1px solid #ccc;
   border-radius: 3px;
   &::placeholder {
     color: #ccc;
+  }
+  @media (max-width: 700px) {
+    width: 30px;
+    height: 20px;
   }
 `;
 
@@ -43,7 +46,12 @@ export const ButtonC = styled.button`
     filter: brightness(1.15);
     color: var(--white);
   }
-  margin-top: 10px;
+  @media (max-width: 700px) {
+    margin-bottom: 5px;
+    padding: 10px;
+    width: 170px;
+    height: 50px;
+  }
 `
 
 export const ButtonV = styled.button`

@@ -18,6 +18,7 @@ cypress
 !.vscode/extensions.json
 .idea
 .DS_Store
+.cypress.config.ts
 *.suo
 *.ntvs*
 *.njsproj

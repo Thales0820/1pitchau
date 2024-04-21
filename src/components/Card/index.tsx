@@ -4,6 +4,7 @@ import { SlMagnifier } from "react-icons/sl";
 import { Title } from "../../pages/Home/styles";
 import { CardBory, TitlePreco, TextPromo, Button, TextButton } from "./styles";
 import { Link } from "react-router-dom";
+import { formataValorBR } from "../../service/format";
 
 interface IDataProdutos {
   id: number,
@@ -56,8 +57,8 @@ export const Card= () => {
                       }} src={'https://raw.githubusercontent.com/profchines/imagens1Pitchau/main/Imagens1Pitchau/' + produto.imagemp} />
                       <Title>{produto.nome}</Title>
                       <br />
-                      <TitlePreco>R${produto.valor}</TitlePreco>
-                      <TextPromo>R${produto.promo}</TextPromo>
+                      <TitlePreco>{formataValorBR(produto.valor)}</TitlePreco>
+                      <TextPromo>{formataValorBR(produto.promo)}</TextPromo>
                       <Link to={'http://localhost:3001/produto/' + produto.id}>
                         <Button>
                           <TextButton>

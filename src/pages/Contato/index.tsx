@@ -3,6 +3,8 @@ import { Menu } from "../../components/Menu"
 import { Div } from "./styls"
 import axios from "axios"
 import { useState, useEffect } from "react"
+import { CgMenuMotion } from "react-icons/cg"
+import { PiArrowSquareInBold } from "react-icons/pi"
 
 interface ICidades {
   id: number,
@@ -95,11 +97,11 @@ export const Contato = () => {
         onChange={e => setMotivo(e.target.value)}></textarea>
         <br />
         <button type="submit" onSubmit={limparCampos}>
-          Enviar
+          Enviar <PiArrowSquareInBold size={16}/>
         </button>
         <br />
         <Link to={'http://localhost:3001/ListaContatos'} style={{textDecoration: 'none'}}>
-          <button>Lista de Contatos</button>
+          <button>Lista de Contatos  <CgMenuMotion size={18}/></button>
         </Link>
       </Div>
     </>
